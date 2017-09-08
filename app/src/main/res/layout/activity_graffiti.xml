@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#000"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/icon_back"
+            />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="保存"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <com.example.hujin.graffitidemo.custom.GraffitiView
+        android:id="@+id/gv_bitmap"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/title_bar"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_operation"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#1f1f1f"
+        >
+
+        <ImageView
+            android:padding="10dp"
+            android:id="@+id/img_undo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_undo"/>
+
+        <ImageView
+            android:padding="10dp"
+            android:id="@+id/img_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/icon_delete"/>
+    </RelativeLayout>
+
+</LinearLayout>
